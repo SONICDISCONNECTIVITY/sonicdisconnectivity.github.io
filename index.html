@@ -561,6 +561,31 @@
             color: var(--accent);
         }
 
+        /* ── MAP ────────────────────────────────── */
+        .map-wrap {
+            margin-bottom: 4rem;
+        }
+        .map-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.55rem;
+            color: var(--text-muted);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+        .map-container {
+            width: 100%;
+            height: 480px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
         /* ── RESPONSIVE ─────────────────────────── */
         @media (max-width: 960px) {
             nav { padding: 1rem 1.5rem; }
@@ -670,6 +695,18 @@
     <div class="eyebrow">Field Recordings</div>
     <h2 class="section-heading">The Zones</h2>
     <p class="zones-lead">Eight urban sites. Each a node in the acoustic map of dis:connectivity.</p>
+
+    <div class="map-wrap">
+        <div class="map-label">Recording Locations · Tunis, 2026</div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/d/embed?mid=12-_hDZn7Kt0YKM7n1A-lrL8DIwYnvaU"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
 
     <div class="zones-grid">
 
@@ -792,12 +829,10 @@
             <div class="zone-photo">
                 <img class="gallery-img active" src="sidi%20bou%20said%20quiet%20zone%20final-1.jpeg" alt="Quiet neighborhood, Sidi Bou Said">
                 <img class="gallery-img"        src="sidi%20bou%20said%20quiet%20zone%20final-2.jpeg" alt="Quiet neighborhood, Sidi Bou Said">
-                <img class="gallery-img"        src="sidi%20bou%20said%20quiet%20zone%20final-3.jpeg" alt="Quiet neighborhood, Sidi Bou Said">
                 <button class="gallery-btn gallery-prev" aria-label="Previous photo">&#8249;</button>
                 <button class="gallery-btn gallery-next" aria-label="Next photo">&#8250;</button>
                 <div class="gallery-dots">
                     <span class="gallery-dot active"></span>
-                    <span class="gallery-dot"></span>
                     <span class="gallery-dot"></span>
                 </div>
             </div>
